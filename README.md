@@ -1,11 +1,14 @@
-# DSA210-Project
+# DSA210-Term Project
 ## Project Overview
-I am Ayşe Ece Kültür, and this is my DSA210 (Introduction to Data Science) term project. This project aims to find the relationship between daily social media use and level of stress over the next three months. I will be investigating how the amount of time I spend on social media daily affects both my mood and my level of stress over the next three months. I intend to discover patterns and determine which behaviors contribute to emotional well-being or increased stress by monitoring characteristics such as total screen time, morning social media use, sleep duration, and self-reported mood and stress levels. 
+I am Ayşe Ece Kültür, and this project is my DSA210 (Introduction to Data Science) term project. This project aims to find the relationship between daily social media use and stress levels over the next three months. I will be investigating how the amount of time I spend on social media daily affects both my mood and my level of stress over the next three months. I intend to discover patterns and determine which behaviors contribute to emotional well-being or increased stress by monitoring characteristics such as total screen time, morning social media use, sleep duration, and self-reported mood and stress levels.
 
+In summary, my main goal is to track my social media usage, sleep duration, mood score, and stress level and prove the validity of the hypothesis in light of this information.
 
 **Hypothesis:** As daily social media usage time increases, mood score decreases, and it leads to an increase in stress levels throughout the day.
 
 ## Objectives
+
+
 
 ## Motivation 
 In today's world, social media has become an important part of daily life, but its effects on mental health are still causing more and more concern. An awful lot of people read social media for hours on end without thinking about how it might affect their mental health. The point of this project is to find out if making more use of social media leads to more stress and a worse mood. By looking at personal data, the project aims to provide a data-driven view of how social media use affects mental health and encourages wise digital use for the greater good.
