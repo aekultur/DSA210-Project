@@ -4,6 +4,11 @@ I am Ayşe Ece Kültür, and this project is my DSA210 (Introduction to Data Sci
 
 ## Objectives
 
+**1. Analyze Patterns and Correlations:** To find patterns in the relationships between stress levels, mood swings, and social media use, apply statistical methods and exploratory data analysis (EDA). 
+
+**2. Test the Hypothesis:** Determine if there is a statistically significant correlation between higher levels of stress throughout the day and poorer mood scores and more social media use.
+
+**3. Visualize Findings:** Present important insights in an understandable and powerful manner by utilizing data visualization tools.
 
 
 ## Motivation 
