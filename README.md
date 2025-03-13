@@ -42,7 +42,7 @@ Handle missing values, eliminate contradictions, and standardize data to ensure 
 Organize time-series data such that it is ready for study.
 
 **Exploratory Data Analysis (EDA)**
-- Summarize important trends by means of descriptive statistical analysis.
+- Summarize important trends using descriptive statistical analysis.
 
 - Find links among grocery prices, inflation, and exchange rates.
 
@@ -51,10 +51,16 @@ Organize time-series data such that it is ready for study.
 - See long-term trends using moving averages and trend analysis.
 
 **Hypothesis Testing**
+- Use statistical tests to support hypotheses.
 
+- Analyze the correlations among grocery prices, exchange rates, and inflation.
+
+- Regression Modeling: Evaluate food price changes and the strength and relevance of inflation and currency rates.
+
+- Analyze the importance of findings depending on confidence intervals and p-values.
 
 **Visualization and Interpretation**
-
+- To investigate the relationships between variables, use time series graphs, heatmaps, and scatter plots.  
 
 
 
