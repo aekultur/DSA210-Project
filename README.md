@@ -22,9 +22,9 @@ Determine how inflation affects grocery prices.
 - Find whether food prices rise faster than general inflation.
 
 ## Hypothesis 
-**H₀(Null Hypothesis):** Grocery prices in Turkey are not statistically significantly influenced by inflation or trade policies.
+**H₀(Null Hypothesis):** Grocery prices are significantly influenced by inflation and changes in exchange rates; higher inflation and devaluation of currencies drive higher food prices. 
 
-**Hₐ(Alternative Hypothesis):** Grocery prices are significantly influenced by inflation and changes in exchange rates; higher inflation and devaluation of currencies drive higher food prices.
+**Hₐ(Alternative Hypothesis):** Grocery prices in Turkey are not statistically significantly influenced by inflation or trade policies.
 
 
 ## Data Analysis Approach
