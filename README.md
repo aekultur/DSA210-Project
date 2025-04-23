@@ -84,20 +84,39 @@ Organize time-series data such that it is ready for study.
 
 **Data Processing:**
 
-***Data Cleaning***
+**1. Data Cleaning**
 - Converting the date column to a datetime format and setting it as an index
 - Rename the column names for easy reading
-***Data Visualization***
+
+**2. Data Visualization**
   
-- l
+   - Trends Over Time Line Plot:
+      - This graph depicts the historical development of General CPI and Food CPI.
+      - Both measures show a definite upward trend, suggesting ongoing inflation.
+      - It helps visually verify that general consumer prices and food costs have risen significantly over the years.
+   - Scatter Plots with Regression Lines
+      - General CIP vs USD
+         - This scatter plot shows the general inflation in connection to the currency rate (USD).
+         - The fitted regression line indicates a strong positive linear correlation: overall CPI tends to rise when the value of the dollar rises.
+      - Food CIP vs USD
+         - This graph analyses how food prices are impacted by exchange rate changes.
+         - It reveals a comparably strong, positive trend: devaluation of the currency links to higher food prices.
+      - General CIP vs Food CIP
+         - This contrast highlights the internal stability of inflation signals.
+         - The almost perfect linear correlation supports the notion that food CPI is closely connected to the larger economic price trends by showing that rises in food prices significantly reflect general inflation.
   	
-***Regression and Correlation Analysis***
+**3. Regression and Correlation Analysis**
 
--l  
+- Simple Linear Regression:
+   - 
+- Pearson Correlation Test:
+   - 
+- Correlation Heatmap:
+   - 
   	
-***Hypothesis Testing***
+**4. Hypothesis Testing**
 
--l  
+- 
   	
 
 
