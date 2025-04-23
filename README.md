@@ -68,8 +68,7 @@ Organize time-series data such that it is ready for study.
 
 **Visualization and Interpretation**
 - Use time series graphs, heatmaps, and scatter plots to investigate the relationships between variables.
-- 
-- For detailed examination, it is highly recommended to check the following: [Findings](DSA210_projectcode)
+- For detailed examination, it is highly recommended to check the following: [Findings](DSA210_projectcode.ipynb)
 
 ---
 
@@ -77,7 +76,7 @@ Organize time-series data such that it is ready for study.
 **Data Collection:** Through April 2020, data were collected from the Central Bank of Turkey (CBRT) and Turkish Statistical Institute (TÜİK), and the International Monetary Fund
 
 **Dataset:**
-- Date: Dates are noted to evaluate every month individually.
+- Date: Dates are noted to be evaluated individually every month.
 - US dollar effective sale:
 - Consumer Price Index (General):
 - Consumer Price Index (Food and Beverages):
@@ -96,27 +95,44 @@ Organize time-series data such that it is ready for study.
       - It helps visually verify that general consumer prices and food costs have risen significantly over the years.
    - Scatter Plots with Regression Lines
       - General CIP vs USD
-         - This scatter plot shows the general inflation in connection to the currency rate (USD).
+         - This scatter plot shows the general inflation in connection with the currency rate (USD).
          - The fitted regression line indicates a strong positive linear correlation: overall CPI tends to rise when the value of the dollar rises.
       - Food CIP vs USD
-         - This graph analyses how food prices are impacted by exchange rate changes.
-         - It reveals a comparably strong, positive trend: devaluation of the currency links to higher food prices.
+         - This graph analyses how exchange rate changes impact food prices.
+         - It reveals a comparably strong, positive trend: currency devaluation links to higher food prices.
       - General CIP vs Food CIP
          - This contrast highlights the internal stability of inflation signals.
          - The almost perfect linear correlation supports the notion that food CPI is closely connected to the larger economic price trends by showing that rises in food prices significantly reflect general inflation.
   	
 **3. Regression and Correlation Analysis**
 
-- Simple Linear Regression:
-   - 
-- Pearson Correlation Test:
-   - 
-- Correlation Heatmap:
-   - 
-  	
+- **Simple Linear Regression:**
+   - Two separate linear regression models were built to examine how the USD exchange rate affects:
+      - General CIP
+      - Food CIP 
+   - The independent variable in both situations is the USD; the dependent variable is the CPI index—either general or food.
+   - The regression model lets us measure the direction and intensity of the association and check its statistical significance.
+- **Pearson Correlation Test:**
+   - A linear relationship between two continuous numerical variables is evaluated using this test, which examines both the strength and direction of the link.
+   - This test helps to answer this question:
+      - "Are food prices and general inflation significantly and linearly affected by the USD exchange rate?"
+   - Results:
+      - r ≈ 0.98 → Very strong positive correlation
+      - p-value ≪ 0.05 → The relationship is statistically significant 
+- **Correlation Heatmap:**
+   - The correlation coefficients between all three factors were shown visually in the form of a heatmap.
+   - The color scale from red to blue shows how strong and in what direction the connection is going.
+   - There is a strong link between all of the variables:
+      - Especially CIP_food and CIP_general (they are almost perfectly linked).
+      - This makes the statistical results from the regression and Pearson tests look even stronger.
+
 **4. Hypothesis Testing**
 
-- 
+H₀(Null Hypothesis): Grocery prices are significantly influenced by inflation and changes in exchange rates; higher inflation and devaluation of currencies drive higher food prices. 
+
+Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically significantly influenced by inflation or trade policies.
+-  Both p-values are smaller than 0.05, so we fail to reject the null hypothesis.
+-  Exchange rates have a statistically significant effect on grocery prices in Turkey.
   	
 
 
