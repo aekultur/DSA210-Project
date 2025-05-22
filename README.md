@@ -80,6 +80,8 @@ Organize time-series data such that it is ready for study.
 - US dollar effective sale:
 - Consumer Price Index (General):
 - Consumer Price Index (Food and Beverages):
+- Oil Prices
+- Unemployment Rate: Evaluated quarterly.
 
 **Data Processing:**
 
@@ -89,10 +91,29 @@ Organize time-series data such that it is ready for study.
 
 **2. Data Visualization**
   
+   - Histograms:
+      - USD (Standardized) Distribution
+         - The pattern is skewed to the right, with a long tail that points to the upside. This means that the USD was mostly below the average, but there were a few times when it increased significantly.
+         - Outliers on the right may show times of currency problems or rapid devaluation.
+      - Unemployment Rate (Standardized) Distribution
+         - This distribution seems more balanced than USD but is still slightly skewed left.
+         - The large range shows that unemployment changes a much over time.
+   - Time Series Line Plot:
+      - Changes in Standardized Oil Prices Over Time
+         - The figure shows a clear upward trend toward the right side.
+         - The price changes show that oil prices are unstable, especially during certain times, such as when there are global price shocks or international events.
    - Trends Over Time Line Plot:
       - This graph depicts the historical development of General CPI and Food CPI.
       - Both measures show a definite upward trend, suggesting ongoing inflation.
       - It helps visually verify that general consumer prices and food costs have risen significantly over the years.
+   - Scatter Plots
+      - Oil Prices vs USD 
+         - This is a very strong positive relationship: when oil prices go up, the USD (exchange rate) also goes up.
+         - The points go up, which means that energy costs and the USD are very closely tied.
+      - Unemployment Rate vs USD
+         - This reveals a strong negative relationship: when unemployment goes up, the USD tends to go down.
+         - This is intriguing since it goes against what most people think: high unemployment is usually seen with a weak currency.
+         - But this could be due to trailing effects or the way the data is set up. For example, periods with increased TL may have been followed by a cooling economy and employment loss.  
    - Scatter Plots with Regression Lines
       - General CIP vs USD
          - This scatter plot shows the general inflation in connection with the currency rate (USD).
@@ -107,24 +128,28 @@ Organize time-series data such that it is ready for study.
 **3. Regression and Correlation Analysis**
 
 - **Simple Linear Regression:**
-   - Two separate linear regression models were built to examine how the USD exchange rate affects:
-      - General CIP
-      - Food CIP 
-   - The independent variable in both situations is the USD; the dependent variable is the CPI index—either general or food.
-   - The regression model lets us measure the direction and intensity of the association and check its statistical significance.
+   - It is used to analyze how the USD exchange rate affects consumer price indices in Turkey.
+   - In both models, the independent variable is the standardized USD exchange rate (usd_std), and the dependent variables are the standardized food CPI and general CPI.
+   - Results show that the USD has a very strong and statistically significant impact on both food and general consumer prices.
+      - For the food CPI model, the R-squared value is 0.948, indicating that about 95% of the variance in food prices is explained by changes in the USD.
+      - For the general CPI model, The has an R-squared value is 0.946.   
+   - In both cases, the p-values for the USD variable are well below 0.001, confirming the significance of the relationship.
+   
 - **Pearson Correlation Test:**
-   - A linear relationship between two continuous numerical variables is evaluated using this test, which examines both the strength and direction of the link.
-   - This test helps to answer this question:
-      - "Are food prices and general inflation significantly and linearly affected by the USD exchange rate?"
-   - Results:
-      - r ≈ 0.98 → Very strong positive correlation
-      - p-value ≪ 0.05 → The relationship is statistically significant 
+   - To further explore the linear relationships, Pearson correlation tests were applied using standardized variables.
+   - The correlation between USD and food CPI is approximately 0.985, and between USD and general CPI, it is around 0.983. These values reflect a very strong positive relationship.
+   - The correlation between USD and oil prices is also very strong and positive, around 0.987. On the other hand, the correlation between USD and unemployment rate is strongly negative, about -0.946.
+   - All of these relationships are statistically significant, with p-values close to zero.
+     
 - **Correlation Heatmap:**
-   - The correlation coefficients between all three factors were shown visually in the form of a heatmap.
-   - The color scale from red to blue shows how strong and in what direction the connection is going.
-   - There is a strong link between all of the variables:
-      - Especially CIP_food and CIP_general (they are almost perfectly linked).
-      - This makes the statistical results from the regression and Pearson tests look even stronger.
+   - A heatmap was used to visually represent the correlation matrix between the USD, food CPI, and general CPI. The results confirm what the correlation coefficients show: all three variables are strongly linked.
+   - In particular, food CPI and general CPI are almost perfectly correlated, supporting the idea that food inflation closely tracks overall inflation trends.
+   - The heatmap’s color gradient helps emphasize the strength and direction of these associations.
+     
+- **Lagged Regression** 
+   - To investigate whether macroeconomic indicators from the previous period affect food prices in the current period, a lagged regression was also conducted.
+   - In this model, the lagged oil price (Oil_price_lag1) was found to have a strong, positive, and statistically significant effect on food CPI in the following period (p < 0.001).
+   - The lagged unemployment rate (Unemployment_lag1) showed a negative coefficient but was not statistically significant (p = 0.429). This suggests that while energy prices from the previous quarter influence current food prices, unemployment may not have an immediate or direct impact.
 
 **4. Hypothesis Testing**
 
@@ -133,7 +158,13 @@ H₀(Null Hypothesis): Grocery prices are significantly influenced by inflation 
 Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically significantly influenced by inflation or trade policies.
 -  Both p-values are smaller than 0.05, so we fail to reject the null hypothesis.
 -  Exchange rates have a statistically significant effect on grocery prices in Turkey.
-  	
+
+**5.Machine Learning**
+
+Prophet Modelling
+
+K-Means Modelling
+
 
 
 
