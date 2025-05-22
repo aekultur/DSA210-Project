@@ -161,9 +161,14 @@ Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically sig
 
 **5.Machine Learning**
 
-Prophet Modelling
+- Prophet Modelling
+   - Oil Prices
+      - 
+   - CIP Food
+      -  
 
-K-Means Modelling
+- K-Means Modelling
+   - 
 
 
 
