@@ -162,13 +162,21 @@ Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically sig
 **5.Machine Learning**
 
 - Prophet Modelling
+   - It is used to forecast future trends in key variables such as oil prices and food inflation 
    - Oil Prices
-      - 
+      - The model says that oil prices will keep going up, but they will only go up a little bit.
+      - The trend of rising prices shows that imported energy will continue to be expensive.
    - CIP Food
-      -  
-
+      -  The model shows that food prices are going up significantly.
+      -  The forecast says that food costs will keep going up a lot over the next two years
+      -  The forecast confidence band gets a little wider with time, which shows that there is more uncertainty.
 - K-Means Modelling
-   - 
+   - It is used to segment different economic periods based on macroeconomic indicators such as exchange rates and inflation rates.
+   - The graphic shows three separate groups, which probably stand for different inflation regimes across time:
+      - Low inflation period (blue): costs for both food and other things are low.
+      - Moderate inflation (green): levels in the middle range.
+      - High inflation phase (orange): both indices go up sharply.
+   - This kind of unsupervised learning helps divide periods based on how the economy as a whole behaves.
 
 
 
