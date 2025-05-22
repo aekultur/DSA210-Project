@@ -159,7 +159,7 @@ Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically sig
 -  Both p-values are smaller than 0.05, so we fail to reject the null hypothesis.
 -  Exchange rates have a statistically significant effect on grocery prices in Turkey.
 
-**5.Machine Learning**
+**5. Machine Learning**
 
 - Prophet Modelling
    - It is used to forecast future trends in key variables such as oil prices and food inflation 
@@ -170,6 +170,7 @@ Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically sig
       -  The model shows that food prices are going up significantly.
       -  The forecast says that food costs will keep going up a lot over the next two years
       -  The forecast confidence band gets a little wider with time, which shows that there is more uncertainty.
+        
 - K-Means Modelling
    - It is used to segment different economic periods based on macroeconomic indicators such as exchange rates and inflation rates.
    - The graphic shows three separate groups, which probably stand for different inflation regimes across time:
@@ -177,6 +178,8 @@ Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically sig
       - Moderate inflation (green): levels in the middle range.
       - High inflation phase (orange): both indices go up sharply.
    - This kind of unsupervised learning helps divide periods based on how the economy as a whole behaves.
+ 
+
 
 
 
