@@ -175,12 +175,40 @@ Hₐ(Alternative Hypothesis): Grocery prices in Turkey are not statistically sig
    - It is used to segment different economic periods based on macroeconomic indicators such as exchange rates and inflation rates.
    - The graphic shows three separate groups, which probably stand for different inflation regimes across time:
       - Low inflation period (blue): costs for both food and other things are low.
-      - Moderate inflation (green): levels in the middle range.
-      - High inflation phase (orange): both indices go up sharply.
+      - Moderate inflation (green): levels in the middle range. Indicates a stable economic period before inflation surged.
+      - High inflation phase (orange): both indices go up sharply. Captures the most severe economic pressure on consumers.
    - This kind of unsupervised learning helps divide periods based on how the economy as a whole behaves.
- 
 
+- Random Forest
+   - Blue Line: The Historical Food CPI
+      - Shows the real values of the food price index from 2020 to the middle of 2025.
+      - There is a considerable rise, especially after 2021, which means that food prices are rising quickly.
+   - Orange Dashed Line – Improved RF Forecast
+      - The model says that CPI growth will level out, with small changes but staying between 4100 and 4300.
+      - The forecast shows a plateauing effect, which is different from the fast rise in the past. This means that the model thinks food costs will rise more slowly or stay the same in the future.
+     
+**6. Limitations and Future Work**
+- Limitations
+   - Limited Feature Set: The main things that the analysis looked at were the CPI, the exchange rate, oil prices, and unemployment. There were no other factors that could have affected the outcome, such as problems in the supply chain, government subsidies, or agricultural output.
+   - Forecasting Accuracy: Machine learning models like Random Forest can be sensitive to overfitting and may have trouble making long-term forecasts, as seen by the CPI estimates that aren't very steady after 2025.
+   - Data Granularity: The data was monthly and at the aggregate level. additional detailed data, such weekly prices or data from specific regions, could give us additional information.
+   - Assumption of Continuity: Time series and ML models presume that past patterns will persist. This may not be true during unanticipated economic shocks or policy changes, including currency interventions, wars, or pandemics.
+     
+- Future Work
+   - Model Improvement: Try out more advanced models like SARIMAX, XGBoost, or LSTM to get better time-series forecasts, especially for longer periods.
+   - Causal Inference: Use economic models to find cause-and-effect linkages, instead of just correlations.
+   - Scenario Analysis: Use simulations of different economic situations (such an oil shock or the lira stabilizing) to see how sensitive food prices are to these situations.
+   - Geographical Breakdown: Look at CPI statistics for specific regions or cities to find patterns and differences in how inflation affects people in those areas.
 
+---
+## Conclusion  
+- This investigation looked into how macroeconomic factors, including inflation, exchange rates, oil prices, and unemployment, have affected grocery costs in Turkey in recent years.  The study found several important things using both statistical analysis and machine learning:
+   - There was a strong link between the USD exchange rate and both general inflation and inflation specific to food.
+   - Oil prices also went up, which made food prices go up. This shows how sensitive the food supply chain is to changes in global energy markets.
+   - Unemployment rates had an indirect effect on consumer demand and price patterns, but it took a while for them to show up.
+   - Machine learning algorithms, especially Random Forest, were able to find complicated patterns in CPI trends and make useful short-term predictions.
+   - K-Means clustering found several eras of inflation, which shows that changes in the economy happen in identifiable phases rather than gradually.
+- In general, the results show that macroeconomic instability, caused by currency devaluation and global commodity shocks, has been a big reason why supermarket costs have gone higher in Turkey.  These findings show how important it is for the economy to be stable in order to keep prices down and protect people's buying power.
 
 
 
